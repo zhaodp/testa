@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>edaijia.cn - 跳转</title>
+  
+<script type="text/javascript">
+    function isFirefox5plus(){
+	var user_agent = navigator.userAgent
+	if(/mozilla/i.test(user_agent) && /firefox\/([5-9]|\d{2,})[^\d]*/i.test(user_agent)){
+	    return true
+	}
+	return false
+    }
+	
+    function jump(url) {
+	var a = document.createElement("a");
+	if(!a.click) {window.location.href = url;return;}
+	if(isFirefox5plus()){window.location.href = url;return;}
+	a.setAttribute("href", url);
+	a.setAttribute("target","_top");
+	a.style.display = "none";
+	document.body.appendChild(a);
+	a.click();
+    }
+	
+    function load_url() {
+	var query_string = location.search.substring(1);
+	var name = query_string.substr(0, 2);
+	var value = query_string.substring(3);
+	if (name == 'go') jump(decodeURIComponent(value));
+    }
+    
+    
+//    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+//    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc03310ce23cf3cde07f3d6d1764fd5d3' type='text/javascript'%3E%3C/script%3E"));
+
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7454e01c8dde2d8b0c96cd03b58b0c23' type='text/javascript'%3E%3C/script%3E"));
+	
+</script>
+</head>
+<body onload="load_url()">
+</body>
+</html>

@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#e0e8ed; font-size:12px; font-family:"微软雅黑",Verdana, Arial;  margin:0; padding:0;}
+div{margin:0 auto; padding:0;}
+h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,form,img,p,pre{
+    margin:0; padding:0; border:none; list-style-type:none;
+}
+.block{
+    width:980px; height:auto;
+}
+a{color:#231f20; text-decoration:none;}
+a:hover{text-decoration:underline;}
+.f_l{float:left;}
+.f_r{float:right;}
+.tl{ text-align:left;}
+.tc{ text-align:center;}
+.tr{ text-align:right;}
+.dis{display:block;}
+.inline{display:inline;}
+.none{display:none;}
+
+.clearfix:after{
+    content:"."; display:block; height:0; clear:both;
+    visibility:hidden;
+}
+*html .clearfix{
+    height:1%;
+}
+*+html .clearfix{
+    height:1%;
+}
+/*英文强制换行*/
+.word{word-break:break-all;}
+/*页面留白*/
+.blank{height:10px; line-height:10px; clear:both; visibility:hidden;}
+.blank0{height:0px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
+
+/*头部信息*/
+#header{ height:97px; width:100%; background:url(../images/header_bg.png) repeat-x top left;}
+#header .head{ height:100%; position:relative;}
+#header .head .logo{ display:inline-block; width:320px; height:45px; position:absolute; top:25px; left:0px;}
+#header .head .nav{ width:550px; _width:560px; height:26px; position:absolute; top:47px; right:0px;}
+#header .head .nav li{ float:left; width:99px; height:26px; line-height:26px; margin-left:10px;}
+#header .head .nav li a{display:block; width:100%; height:100%; text-align:center; font-weight:bold; font-size:14px; color:#231f20; text-decoration:none;}
+#header .head .nav li a:hover{background:url(../images/nav_bg.png) no-repeat center bottom; display:block; width:100%; height:100%;}
+#header .head .nav li a.actives{ background:url(../images/nav_bg.png) no-repeat center top; color:#f3fbfe;}
+
+
+/*banner 信息 和 切换*/
+.banner{ height:368px; width:100%; background:url(../images/banner.png) no-repeat center top; position:relative;}
+.banner .banner_img{ width:460px; height:350px; position:absolute; top:10px; right:30px;}
+.banner .banner_img ul{POSITION: relative; width:100%;}
+.banner .banner_img ul li{Z-INDEX: 8; LEFT: 0px;  TOP: 0px;OVERFLOW: hidden; POSITION: absolute; filter:alpha(opacity=0); -moz-opacity:0.0;  -khtml-opacity: 0.0; opacity: 0.0;}
+.banner .banner_img ul li.current {Z-INDEX: 10;}
+.banner .banner_img ul li.prev {Z-INDEX: 9}
+
+/*banner2 信息 和 切换*/
+.banner2{ height:110px; width:980px; position:relative;}
+.banner2 .banner2_img{ width:980px; height:110px; position:absolute;}
+.banner2 .banner2_img ul{position: relative; width:100%;}
+.banner2 .banner2_img ul li{Z-INDEX: 8; LEFT: 0px;  TOP: 0px;OVERFLOW: hidden; POSITION: absolute; filter:alpha(opacity=0); -moz-opacity:0.0;  -khtml-opacity: 0.0; opacity: 0.0;}
+.banner2 .banner2_img ul li.current {Z-INDEX: 10;}
+.banner2 .banner2_img ul li.prev {Z-INDEX: 9}
+
+/*下载按钮*/
+.down{ height:135px; width:100%; background:url(../images/down_bg.png) no-repeat center top; position:relative;}
+.down .down_btn{ width:615px; height:70px; position:absolute; top:30px; left:12px;}
+.down .down_btn li{ float:left; margin-left:12px;}
+.down .down_btn li a{display: block; width: 191px; height: 71px;}
+.down .down_list{ width:500px; position:absolute; top:30px; right:20px;  font-family:"华文黑体",Verdana, Arial;  line-height:22px;}
+.down .down_list dt{ float:left; clear:left; width:70px; text-align:right; font-size:14px; color:#ffffff;}
+.down .down_list dd{ float:left;}
+.down .down_list dd a{ color:#ffffff; display:inline-block; text-align:center}
+.a1{ width:130px;}
+.a2{ width:70px;}
+.a3{ width:100px;}
+.a4{ width:55px;}
+.a_l6{letter-spacing:6px;}
+.a_l5{letter-spacing:0px;}
+
+
+.down .down_list dd a.a_l6_l{ padding-left:10px;}
+.down .down_list dd a.a_l6_2{ padding-left:17px;}
+.down .down_list dd a.a_l6_3{ padding-left:22px;}
+.down .down_list dd a.a_l6_4{ padding-left:22px;}
+/*主页中间内容*/
+#main{ background:#ffffff;}
+#main .main_box{ padding:24px 17px 18px 17px;}
+#main .main_box .AearL{ width:623px; padding:10px 30px 25px 45px; float:left; border:1px solid #e5e6e7;  overflow:hidden;}
+#main .main_box .AearL .AearL_dl_l,#main .main_box .AearL .AearL_dl_r{ height:276px; overflow:hidden;}
+#main .main_box .AearL .AearL_dl_l dt{ float:left;}
+#main .main_box .AearL dd{ float:left; width:380px; height:235px; border-bottom: 1px dashed #ebebeb; padding-top:10px; letter-spacing:2px;}
+#main .main_box .AearL dd h2{ height:80px; line-height:80px; font-size:28px; color:#231f20; margin-top:20px;}
+#main .main_box .AearL dd p{ font-size:16px; color:#676766; line-height:24px;}
+#main .main_box .AearL .AearL_dl_l dd{ margin-left:20px;}
+#main .main_box .AearL .AearL_dl_r dt{ float:right;}
+#main .main_box .AearL dd.border_none{ border-bottom:none;}
+#main .main_box .AearR{ width:205px; float:left; margin-left:15px; overflow:hidden; position:relative;}
+#main .main_box .AearR .ddl{width: 200px; height:auto; background:#fff5ba; position:absolute; top:29px; right:1px; overflow:hidden; line-height:22px; text-indent: 15px; padding:8px 4px 8px 4px;}
+#main .main_box .AearR .ddl a{ color:#000000; display:block; margin-left:4%; height:22px; float:left;}
+#main .main_box .AearR .ddl a:hover{ text-decoration:none; background:#fc8404;}
+#main .main_box .AearR .e_title{font-size:18px; font-weight:600; line-height:36px; height:36px; color:#231f20;}
+#main .main_box .AearR .e_title span{ float:right; font-size:12px; display:inline-block; width:105px; height:25px; line-height:25px; text-indent:15px; color:#882f50; background:url(../images/ddl_bg.png) no-repeat left top; margin-top:5px;}
+#main .main_box .AearR .e_title a{ float:right; font-size:14px; height:25px; line-height:25px; margin-top:5px; color:#4087C4;}
+#main .main_box .AearR .date_region{ width:100%; height:auto;}
+#main .main_box .AearR .date_region dl{ width:100%; line-height:30px; color:#040707;}
+#main .main_box .AearR .date_region dl span{ display:inline-block; width:102px; text-align:center;}
+#main .main_box .AearR .date_region dl dt{ font-weight:500; font-size:15px; border-bottom:1px solid #e7e8e8;}
+#main .main_box .AearR .date_region dl dd{border-bottom:1px dashed #e7e8e8; font-family:"华文黑体",Verdana, Arial;}
+#main .main_box .AearR .date_region p{ -webkit-text-size-adjust:none; font-size:10px; color:#666; height:22px; line-height:22px; text-align:right;}
+#main .main_box .AearR .date_region pre{ -webkit-text-size-adjust:none; font-size:12px; color:#666; line-height:18px;}
+#main .main_box .AearR .emaill{ background:url(../images/mail.png) no-repeat left center; height:30px; line-height:30px; text-indent:38px;}
+#main .main_box .AearR .emaill a{ color:#4087c4;}
+#main .main_box .AearR .link{ width:100%; overflow:hidden; height:502px;}
+#main .main_box .AearR .link a{display:block; width:163px; height:56px;}
+.link_sina{ display:block; height:64px; padding-bottom:7px;}
+
+/*内容页标题*/
+.c_title{ background:url(../images/title_bg.png) no-repeat left top; height:50px; line-height:50px; text-indent:20px; color:#ffffff; font-weight:bold; font-size:16px;}
+.c_content{ font-size:16px; line-height:24px; letter-spacing:2px; color:#7b7b7a; padding:0px 10px 10px 10px;}
+.c_content p{ padding-bottom:22px;}
+.c_content_bai{height:240px; clear:both; visibility:hidden;}
+.prev {Z-INDEX: 9}
+
+.c_content .c_list_title{ font-weight:600; margin-top:20px;}
+.c_content .c_list_content{ padding:0px 0px 15px 30px; border-bottom:1px solid #dfdfdf;}
+.c_content .c_list_content strong{ font-size:14px;}
+.c_content .c_list_content ol{ padding-left:20px;}
+.c_content .c_list_content ol li{ font-size:13px;}
+.c_content .c_content_l{ width:70%; float:left;}
+.c_content .c_content_l dl dt{ font-weight:600; border-bottom:1px solid #dfdfdf; padding-bottom:5px; margin-bottom:15px;}
+.c_content .c_content_l dl dd{ font-size:14px; padding-left:12px;}
+.c_content .c_content_r{ width:25%; float:left; margin-left:3%;}
+.c_content .c_content_r .actives{color: #ff6600; font-weight:600;}
+.c_content .c_content_r a:hover{color: #ff6600; text-decoration:none;}
+
+/*link*/
+.c_link img{ margin:5px 10px 5px 10px;}
+
+/*页面底部*/
+#footer{height:95px; text-align:center;}
+#footer .foot_nav{ height:50px; line-height:50px; font-size:15px; font-weight:bold;}
+#footer .foot_nav a{ color:#4783c2; margin:0px 22px 0px 22px;}
+#footer .copyright{ color:#8a908d;}
+
+
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(../images/overlay.png) repeat 0 0;}
+#colorbox{outline:0;}
+#cboxTopLeft{width:21px; height:21px; background:url(../images/controls.png) no-repeat -101px 0;}
+#cboxTopRight{width:21px; height:21px; background:url(../images/controls.png) no-repeat -130px 0;}
+#cboxBottomLeft{width:21px; height:21px; background:url(../images/controls.png) no-repeat -101px -29px;}
+#cboxBottomRight{width:21px; height:21px; background:url(../images/controls.png) no-repeat -130px -29px;}
+#cboxMiddleLeft{width:21px; background:url(../images/controls.png) left top repeat-y;}
+#cboxMiddleRight{width:21px; background:url(../images/controls.png) right top repeat-y;}
+#cboxTopCenter{height:21px; background:url(../images/border.png) 0 0 repeat-x;}
+#cboxBottomCenter{height:21px; background:url(../images/border.png) 0 -29px repeat-x;}
+#cboxContent{background:#fff; overflow:hidden;}
+.cboxIframe{background:#fff;}
+#cboxError{padding:50px; border:1px solid #ccc;}
+#cboxLoadedContent{margin-bottom:28px;}
+#cboxTitle{position:absolute; top:4px; left:0; text-align:center; width:100%; color:#949494;}
+#cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+#cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center;}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+#cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+#cboxPrevious{position:absolute; bottom:0; left:0; background:url(../images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+#cboxPrevious:hover{background-position:-75px -25px;}
+#cboxNext{position:absolute; bottom:0; left:27px; background:url(../images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+#cboxNext:hover{background-position:-50px -25px;}
+#cboxClose{position:absolute; top:5px; right:15px; background:url(../images/close.png) no-repeat 0px 0; width:38px; height:38px; text-indent:-9999px;}
+#cboxClose:hover{}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+
+.ad_box{width: 980px; height: 501px; background: url(../images/background.png) repeat-x center center;}
+.ad_background{width: 980px; height: 501px; background:url(../images/ad_sh.png) no-repeat center center;}
+.baoming_btn{ display:block; position: absolute; bottom:25px; right: 110px;
+    width: 225px; height: 68px; background: url(../images/baoming.png) no-repeat center -5px;}
+.baoming_btn:hover{background:url(../images/baoming.png) no-repeat center -92px;}
+
+.ad {
+    position: fixed;
+    height: 188px;
+    width: 256px;
+    right: 5px;
+    bottom: 0px;
+    z-index: 999999;
+    display: none;
+}
+
+.ad span {
+    position: absolute;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-align: center;
+    line-height: 15px;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+}

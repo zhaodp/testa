@@ -1,0 +1,235 @@
+#ie6-warning {
+	background: #FF0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 12px;
+	line-height: 24px;
+	color: #F00;
+	padding: 0 10px;
+}
+
+#ie6-warning img {
+	float: right;
+	cursor: pointer;
+	margin-top: 4px;
+}
+
+#ie6-warning a {
+	text-decoration: none;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+legend {
+	margin-bottom: 8px;
+}
+
+section {
+    padding-top: 20px;
+}
+.nav .nav-header {
+	font-size: 12px;
+}
+
+.require{
+	border:red 1px solid;
+}
+
+img {
+  max-width: none;
+}
+
+.navbar-inner {
+	min-height: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #356CAD;
+	background-image: -moz-linear-gradient(top, #356CAD, #356CAD);
+	background-image: -ms-linear-gradient(top, #356CAD, #356CAD);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#356CAD),
+		to(#356CAD) );
+	background-image: -webkit-linear-gradient(top, #356CAD, #356CAD);
+	background-image: -o-linear-gradient(top, #356CAD, #356CAD);
+	background-image: linear-gradient(top, #356CAD, #356CAD);
+	background-repeat: repeat-x;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid : dximagetransform.microsoft.gradient ( startColorstr =
+		'#356CAD', endColorstr = '#356CAD', GradientType = 0 );
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0
+		rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0
+		rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0
+		rgba(0, 0, 0, 0.1);
+}
+
+.mini-layout {
+	height: 240px;
+	margin-bottom: 20px;
+	padding: 9px;
+	border: 1px solid #DDDDDD;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+	background-color: #ffffff;
+}
+
+
+.logo_sem{
+    display:block;
+    width:256px;
+    height:69px;
+}
+
+.baidu_sme_main{
+    color:#666666;
+}
+
+.ad_background,.app_daijia{
+    line-height:32px;
+    font-size:16px;
+    overflow:hidden;
+    padding:10px;
+}
+.app_daijia span{
+    color:#c1272d;
+}
+
+.app_daijia span,.app_daijia b{
+    font-size:40px;
+    font-weight:900;
+}
+
+.down_button a{
+    display:block;
+    width:180px;
+    line-height:22px;
+    text-align:right;
+    padding: 10px 30px 10px 0px;
+    margin:15px 0px 15px 0px;
+    overflow:hidden;
+    float:left;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    text-decoration:none;
+}
+
+a.iphone_sme{
+    border:1px solid #000000;
+    background:#4d4d4d url(../img/btn_bg.png) no-repeat 15px 3px;
+
+}
+
+a.android_sme{
+    border:1px solid #222222;
+    background:#24b202 url(../img/btn_bg.png) no-repeat 15px bottom;
+    margin-left:8px;
+}
+a:hover.iphone_sme{
+    background-color: #005580;
+}
+a:hover.android_sme{
+    background-color: #006600;
+}
+
+.clear_both{
+    clear:both;
+}
+
+.hot_phone{
+    text-indent:30px;
+}
+
+.hot_phone a{
+    font-size:20px;
+    color:#c1272d;
+}
+
+.city_link{
+    padding:20px 0px 30px 0px;
+}
+
+.footer_baidu{
+    margin-top:15px;
+    text-align:center;
+    line-height:22px;
+    padding:10px 0px 10px 0px;
+    background:#dfdfdf;
+}
+.footer_baidu span{
+    color:#999999;
+    font-size:16px;
+}
+.footer_baidu a{
+    margin:0px 15px 0px 15px;
+}
+@media (max-width: 640px) {
+    .down_button a{
+        width:140px;
+        padding: 5px 17px 5px 17px;
+    }
+    a.iphone_sme{
+        background:#4d4d4d url(../img/btn_middle_bg.png) no-repeat 12px 3px;
+
+    }
+
+    a.android_sme{
+        background:#24b202 url(../img/btn_middle_bg.png) no-repeat 12px -68px;
+        margin-left:8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .down_button a{
+        width:100px;
+        line-height:20px;
+        padding: 5px 17px 5px 17px;
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+    .logo_sem{
+        width:143px;
+        height:38px;
+        overflow:hidden;
+        text-indent:-9999px;
+        background:url(../img/logo_sme_small.png) no-repeat center center;
+    }
+
+    .ad_background,.app_daijia{
+        line-height:24px;
+        font-size:16px;
+        overflow:hidden;
+        padding:10px;
+    }
+
+    .app_daijia span{
+        font-size:32px;
+        font-weight:600;
+        color:#c1272d;
+        padding:0px 5px 0px 15px;
+    }
+
+    .app_daijia b{
+        font-size:32px;
+        font-weight:100;
+    }
+
+    a.iphone_sme{
+        background:#4d4d4d url(../img/btn_small_bg.png) no-repeat 5px 5px;
+
+    }
+
+    a.android_sme{
+        margin-left:8px;
+        background:#24b202 url(../img/btn_small_bg.png) no-repeat 5px -60px;
+    }
+}
+
+

@@ -1,0 +1,2 @@
+<li class="divider"></li>
+<li <?php if($route=='profile/changepasswd') echo 'class="active"'?>><a href="<?php echo Yii::app()->createUrl('/profile/changepasswd');?>"><i class="icon-wrench"></i>修改密码</a></li>

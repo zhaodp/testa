@@ -1,0 +1,38 @@
+tr.ready {
+	background: none repeat scroll 0 0 #F6F6F6;
+}
+
+tr.complate {
+	background: none repeat scroll 0 0 #CBE8BA;
+}
+
+tr.cancel {
+	background: none repeat scroll 0 0 #3399CC;
+	color:#000000;
+}
+
+tr.cancel a {
+	color:#000000;
+}
+
+tr.confirm {
+	background: none repeat scroll 0 0 #FF8351;
+}
+
+tr.not_confirm {
+	background: none repeat scroll 0 0 #F3D174;
+}
+
+.summary{
+	padding:6px 0;
+	text-align:right;
+}
+
+.vip {
+	display:block;
+    background-position: 0px -20px;
+    height: 18px;
+    width: 18px;
+    background:url("../i/vip.gif") no-repeat scroll 0 0 transparent;
+    float:left;
+}

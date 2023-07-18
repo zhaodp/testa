@@ -1,0 +1,30 @@
+<?php
+return array(
+    'zones' => array(
+        'order' => array(
+            'host'     => 'cache05.edaijia-inc.cn',
+            'port'     => 6379,
+            'password' => 'k74FkBwb7252FsbNk2M7',
+            'set'      => array(
+                //add queue type here
+            ),
+        ),
+
+        'brpop_order' => array(
+            'host'     => 'cache05.edaijia-inc.cn',
+            'port'     => 6379,
+            'password' => 'k74FkBwb7252FsbNk2M7',
+            'brpop'    => 5,
+            'set'      => array(
+                //add queue type here
+                'orderprocess',
+            ),
+        ),
+
+        'default' => array(
+            'host'     => 'cache02n.edaijia.cn',
+            'port'     => 6379,
+            'password' => 'k74FkBwb7252FsbNk2M7',
+        ),
+    ),
+);

@@ -1,0 +1,24 @@
+<?php
+/**
+ *  添加工单分类
+ * @author wanglonghuan
+ * @date 2014/6/16
+ */
+class CreateAction extends CAction
+{
+    public function run()
+    {
+	var_dump($_GET);
+	//$type_id = $_GET['code'];
+	$name = $_GET['class'];
+	//var_dump($type_id); 
+	var_dump('--------------'.$name);
+ 	exit;
+        $model = new Dict();
+        $model->unsetAttributes();
+
+        $this->controller->render('ticket_class_list',array(
+            'model' =>$model,
+        ));
+    }
+}

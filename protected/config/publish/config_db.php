@@ -1,0 +1,521 @@
+<?php
+$dbstat_proxy = array (
+	'class'=>'application.components.CEDJConnection',
+	'connectionString'=>'mysql:host=vdbproxystatrw.edaijia-inc.cn;port=3306;dbname=db_proxy_stat',
+	'schemaCachingDuration'=>600,
+	'emulatePrepare'=>true,
+	'autoConnect'=>false,
+	'username'=>'db_proxystat_rw',
+	'password'=>'emyaf3Uoy8zDFt3',
+	'charset'=>'utf8',
+	'tablePrefix'=>'t_'
+	);
+$db = array (
+	'class'=>'application.components.CEDJConnection', 
+	'connectionString'=>'mysql:host=vdbcarrw.edaijia-inc.cn;dbname=db_car', 
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'db_car_rw', 
+	'password'=>'rteZUa7r69PrcQE', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'t_'
+	);
+$dbadmin = array (
+	'class'=>'application.components.CEDJConnection', 
+	'connectionString'=>'mysql:host=rdsz3iazjuyvfzz966.mysql.rds.aliyuncs.com;dbname=db_admin', 
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'sp_car_master', 
+	'password'=>'uMTNwWqnqjt5CKPa', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'t_'
+	);
+$dbstat = array (
+	'class'=>'application.components.CEDJConnection', 
+	'connectionString'=>'mysql:host=vdbstatrw.edaijia-inc.cn;dbname=db_stat',
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'db_stat_rw', 
+	'password'=>'TLHo2hFctm2NEY4', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'t_'
+	);
+$dbreport = array (
+	'class'=>'application.components.CEDJConnection', 
+	'connectionString'=>'mysql:host=rdsz3iazjuyvfzz966.mysql.rds.aliyuncs.com;dbname=db_report', 
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'sp_report', 
+	'password'=>'xMr6trenmTVvUQVm', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'t_'
+	);
+$dbreport_readonly = array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=rdsz3iazjuyvfzz966.mysql.rds.aliyuncs.com;dbname=db_report',
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'sp_report',
+    'password'=>'xMr6trenmTVvUQVm',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_readonly = array (
+	'class'=>'application.components.CEDJConnection',
+	'connectionString'=>'mysql:host=vdbcarro.edaijia-inc.cn;dbname=db_car', 
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'db_car_ro', 
+	'password'=>'43qm3ouQhPtfagj', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'t_'
+	);
+$dbadmin_readonly = array (
+	'class'=>'application.components.CEDJConnection',
+	'connectionString'=>'mysql:host=rdsz3iazjuyvfzz966.mysql.rds.aliyuncs.com;dbname=db_admin', 
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'sp_car_master', 
+	'password'=>'uMTNwWqnqjt5CKPa', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'t_'
+	);
+$dbstat_readonly = array (
+	'class'=>'application.components.CEDJConnection', 
+	'connectionString'=>'mysql:host=vdbstatro.edaijia-inc.cn;dbname=db_stat',
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'db_stat_ro', 
+	'password'=>'HKGVQUoT9y9ECt4', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'t_'
+	);
+$mongodb = array (
+	'class'=>'Mongo', 
+	'connectionString'=>'mongodb://mongo.edaijia.cn:27017', 
+	'dbName'=>'driver', 
+	'fsyncFlag'=>false, 
+	'safeFlag'=>true, 
+	'upsertFlag'=>true
+	);
+$dbsys = array (
+	'class'=>'application.components.CEDJConnection', 
+	'connectionString'=>'mysql:host=vdbcarrw.edaijia-inc.cn;dbname=db_sys', 
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'db_sys_rw', 
+	'password'=>'aBuW3XwFnXoes7j', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'sys_'
+	);
+$dborder = array (
+	'class'=>'application.components.CEDJConnection', 
+	'connectionString'=>'mysql:host=vdborderrw.edaijia-inc.cn;dbname=db_order', 
+	'schemaCachingDuration'=>600, 
+	'emulatePrepare'=>true, 
+	'autoConnect'=>false, 
+	'username'=>'db_order_rw', 
+	'password'=>'cgrPTqN4GZ9AWy9', 
+	'charset'=>'utf8', 
+	'tablePrefix'=>'t_'
+	);
+$dborder_readonly = array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=vdborderro.edaijia-inc.cn;dbname=db_order',
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_order_ro',
+    'password'=>'nqE6rZox3AignA4',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_');
+$db_booking_order = array (
+    'class'=>'system.db.CDbConnection',
+    'connectionString'=>'mysql:host=vdbpublic01rw.edaijia-inc.cn;dbname=db_booking',
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'enableParamLogging'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_booking_rw',
+    'password'=>'Thfx3zxBe24LdvD',
+    'charset'=>'utf8',
+	);
+$db_booking_order_readonly = array (
+    'class'=>'system.db.CDbConnection',
+    'connectionString'=>'mysql:host=vdbpublic01ro.edaijia-inc.cn;dbname=db_booking',
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'enableParamLogging'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_booking_ro',
+    'password'=>'Lj6QFTxoi4Na6Xa',
+    'charset'=>'utf8',
+	);
+$db_finance= array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=vdbfinancerw.edaijia-inc.cn;dbname=db_finance',
+	'enableProfiling'=>true,
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_finance_rw',
+    'password'=>'FnPfv34oJYk7eht',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_finance_ext= array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=rds26f2aeyy2yqn757.mysql.rds.aliyuncs.com;dbname=db_finance_ext',
+    'enableProfiling'=>true,
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'sp_finance_ext',
+    'password'=>'p1uJQfq1aXLPi9',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_finance_ext_readonly = array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=rr-bp14q7zbytw1ac884.mysql.rds.aliyuncs.com;dbname=db_finance_ext',
+    'enableProfiling'=>true,
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'sp_finance_ext',
+    'password'=>'p1uJQfq1aXLPi9',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_activity = array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=rds26f2aeyy2yqn757.mysql.rds.aliyuncs.com;dbname=db_activity',
+    'enableProfiling'=>true,
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'sp_activity_user',
+    'password'=>'xMr6trenmTVvUQVm',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$dbactivity_readonly = array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=rr-bp14q7zbytw1ac884.mysql.rds.aliyuncs.com;dbname=db_activity',
+    'enableProfiling'=>true,
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'sp_activity_user',
+    'password'=>'xMr6trenmTVvUQVm',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_third = array (
+    'class'=>'application.components.CEDJConnection',
+    'enableProfiling'=>true, //开启性能 显示SQL 执行时间 zhanglimin add 2013-05-11
+    'connectionString'=>'mysql:host=rdsz3iazjuyvfzz966.mysql.rds.aliyuncs.com;dbname=db_third',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'sp_db_third',
+    'password'=>'IEQ7HSgZes4BdGn',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_driver_quality = array(
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=rds26f2aeyy2yqn757.mysql.rds.aliyuncs.com;dbname=db_driver_quality',
+    'enableProfiling'=>true,
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'sp_quality',
+    'password'=>'gJYuc5Qw20g5AAf',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_driver_quality_readonly = array (
+	'class'=>'system.db.CDbConnection',
+	'enableProfiling'=>true, //开启性能 显示SQL 执行时间 liuxiaobo add 2013-12-11
+	'connectionString'=>'mysql:host=rr-bp14q7zbytw1ac884.mysql.rds.aliyuncs.com;dbname=db_driver_quality',
+	'schemaCachingDuration'=>600,
+	'emulatePrepare'=>true,
+	'enableParamLogging'=>true,
+	'autoConnect'=>false,
+    'username'=>'sp_quality',
+    'password'=>'gJYuc5Qw20g5AAf',
+	'charset'=>'utf8',
+	'tablePrefix'=>'t_'
+	);
+$db_pomo = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true, //开启性能 显示SQL 执行时间 zhanglimin add 2013-05-11
+    'connectionString'=>'mysql:host=rds9moff216kxk2m2z8fb829.mysql.rds.aliyuncs.com;dbname=pomo',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'sp_car_master',
+    'password'=>'uMTNwWqnqjt5CKPa',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_dcstatistic = array(
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=rdseok8evj5w2jh5uprrj479.mysql.rds.aliyuncs.com;dbname=db_dcstatistic',
+    'enableProfiling'=>true,
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'data',
+    'password'=>'sudEio998s8daAD0af',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_driver_stay= array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=vdbdriverstayrw.edaijia-inc.cn;dbname=db_driver_stay',
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_driverstay_rw',
+    'password'=>'w6Cfnw6C7pjJeLL',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_inner_report = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=vdbcrmrw.edaijia-inc.cn;dbname=db_crm',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_crm_rw',
+    'password'=>'HMP9CHVRs7ZYe6Q',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_callcenter = array (
+    'class'=>'application.components.CEDJConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=vdbcallcenterrw.edaijia-inc.cn;dbname=db_callcenter',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_callcenter_rw',
+    'password'=>'VZ7F6DgLKkm8xGY',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_callcenter_readonly = array (
+    'class'=>'application.components.CEDJConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=vdbcallcenterro.edaijia-inc.cn;dbname=db_callcenter',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_callcenter_ro',
+    'password'=>'Gbo8RPJrd7U3kyo',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_driver = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=vdbdriverrw.edaijia-inc.cn;dbname=db_driver',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_driver_rw',
+    'password'=>'X4se9xfW7AnnLky',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_driver_readonly = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=vdbdriverro.edaijia-inc.cn;dbname=db_driver',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_driver_ro',
+    'password'=>'W3CrUrgkf6M9vEc',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_finance_ro = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=vdbfinancero.edaijia-inc.cn;dbname=db_finance',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_finance_ro',
+    'password'=>'GQ27WwQsBY9CQpV',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_');
+$db_finance_master_ssd = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=vdbfinancerw.edaijia-inc.cn;dbname=db_finance',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_finance_rw',
+    'password'=>'FnPfv34oJYk7eht',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+//财务离线库
+$db_finance_offline = array (
+	'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true, //开启性能 显示SQL 执行时间 zhanglimin add 2013-05-11
+	'connectionString'=>'mysql:host=vdbfinancero.edaijia-inc.cn;dbname=db_finance',
+	'schemaCachingDuration'=>0,
+	'emulatePrepare'=>true,
+	'autoConnect'=>false,
+	'username'=>'db_finance_ro',
+	'password'=>'GQ27WwQsBY9CQpV',
+	'charset'=>'utf8',
+	'tablePrefix'=>'t_'
+	);
+//api调用量统计
+$db_api_invoke_stat = array (
+    'class'=>'application.components.CEDJConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=rdseok8evj5w2jh5uprrj479.mysql.rds.aliyuncs.com;dbname=db_inner_report2',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'inner_user',
+    'password'=>'hoiAFi7asfgd71',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_driver_recruitment = array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=vdbdriverrecruitmentrw.edaijia-inc.cn;dbname=db_driver_recruitment',
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'enableParamLogging'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_driverment_rw',
+    'password'=>'Z7UB7ZpsZ8cgvcP',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_driver_recruitment_readonly = array (
+    'class'=>'application.components.CEDJConnection',
+    'connectionString'=>'mysql:host=vdbdriverrecruitmentro.edaijia-inc.cn;dbname=db_driver_recruitment',
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'enableParamLogging'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_driverment_ro',
+    'password'=>'cnhzhk4TzET9n2N',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_customer = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true, 
+    'connectionString'=>'mysql:host=vdbcustomerrw.edaijia-inc.cn;dbname=db_customer',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_customer_rw',
+    'password'=>'pbfNE8k4TaPn9mv',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_customer_ro = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true, 
+    'connectionString'=>'mysql:host=vdbcustomerro.edaijia-inc.cn;dbname=db_customer',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_customer_ro',
+    'password'=>'e4XtbjK4fAtNv8j',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_crm = array (
+	'class'=>'system.db.CDbConnection',
+	'enableProfiling'=>true,
+	'connectionString'=>'mysql:host=vdbcrmrw.edaijia-inc.cn;dbname=db_crm',
+	'schemaCachingDuration'=>0,
+	'emulatePrepare'=>true,
+	'autoConnect'=>false,
+	'username'=>'db_crm_rw',
+	'password'=>'HMP9CHVRs7ZYe6Q',
+	'charset'=>'utf8',
+	'tablePrefix'=>'t_'
+	);
+$db_channel = array (
+	'class'=>'system.db.CDbConnection',
+	'connectionString'=>'mysql:host=vdbpublic01rw.edaijia-inc.cn;dbname=db_channel',
+	'schemaCachingDuration'=>0,
+	'emulatePrepare'=>true,
+	'enableParamLogging'=>true,
+	'autoConnect'=>false,
+	'username'=>'db_channel_rw',
+	'password'=>'VWBYtAJgxJZK272',
+	'charset'=>'utf8',
+	'tablePrefix'=>'t_'
+	);
+$db_user_market = array (
+    'class'=>'system.db.CDbConnection',
+    'connectionString'=>'mysql:host=vdbusermarketrw.edaijia-inc.cn;dbname=db_user_market',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'enableParamLogging'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_usermarket_rw',
+    'password'=>'eawmtY8Ea2QWfc2',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+#账户注销
+$db_customer_clear = array (
+    'class'=>'system.db.CDbConnection',
+    'connectionString'=>'mysql:host=vdbpublic01rw.edaijia-inc.cn;dbname=db_customer_clear',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'enableParamLogging'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_custclear_rw',
+    'password'=>'u6RuxYfCGW9W3GH',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_'
+	);
+$db_clean_data = array (
+    'class'=>'system.db.CDbConnection',
+    'connectionString'=>'mysql:host=rds26f2aeyy2yqn757.mysql.rds.aliyuncs.com;dbname=db_clean_data',
+    'schemaCachingDuration'=>600,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_clean_data_rw',
+    'password'=>'tHvzvsdlQ74jLgOo',
+    'charset'=>'utf8',
+    'tablePrefix'=>'no_');
+$dborder_v2_readonly = array (
+    'class'=>'system.db.CDbConnection',
+    'enableProfiling'=>true,
+    'connectionString'=>'mysql:host=vdborderwebro.edaijia-inc.cn;dbname=db_order',
+    'schemaCachingDuration'=>0,
+    'emulatePrepare'=>true,
+    'autoConnect'=>false,
+    'username'=>'db_order_web_ro',
+    'password'=>'re96YpirFtYzp6N',
+    'charset'=>'utf8',
+    'tablePrefix'=>'t_');

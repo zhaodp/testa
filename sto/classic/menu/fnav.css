@@ -1,0 +1,338 @@
+/*水平导航*/
+.edj-v2-hnav
+{
+    position: fixed;
+    z-index: 100000001;
+    top: 0;
+    left: 0;
+
+    clear: both;
+    overflow: hidden;
+    zoom: 1;                     /* needed in IE up to version 7, or set width or height to trigger "hasLayout" */
+
+    width: 100%;
+    height: 50px;
+
+    background: #399bff;
+}
+.edj-v2-hnav > .edj-v2-logo
+{
+    float: left;
+
+    width: 56px;
+    height: 50px;
+
+    cursor: pointer;
+
+    background: #2b7bcc url(SLogo.png) 10px center no-repeat;
+}
+.edj-v2-hnav > .edj-v2logo-exp
+{
+    width: 200px;
+    height: 50px;
+
+    background: #2b7bcc url(Logo.png) center no-repeat;
+}
+.edj-v2-hnav form > div
+{
+    float: right;
+
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 14px;
+    padding: 0 15px;
+
+    border-radius: 15px;
+    background: #3085db;
+}
+.edj-v2-hnav form > div > .icon_search
+{
+    float: right;
+
+    width: 17px;
+    height: 17px;
+    margin-top: 6px;
+
+    cursor: pointer;
+
+    background: url(Icon_Search.png) center no-repeat;
+}
+.edj-v2-hnav form > div > input
+{
+    height: 30px;
+
+    color: #fff !important;
+    border: 0;
+    outline: none;
+    background: #3085db;
+}
+::-webkit-input-placeholder
+{
+    /* WebKit browsers */
+    color: #fff !important;
+}
+:-moz-placeholder
+{
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff !important;
+}
+::-moz-placeholder
+{
+    /* Mozilla Firefox 19+ */
+    color: #fff !important;
+}
+:-ms-input-placeholder
+{
+    /* Internet Explorer 10+ */
+    color: #fff !important;
+}
+/*垂直导航*/
+.edj-v2-fnav-box *,
+.edj-v2-hnav *
+{
+    -webkit-box-sizing: border-box; /* Safari */
+    -moz-box-sizing: border-box; /* Firefox */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+
+    color: #a1b2cf;
+}
+.edj-v2-fnav-box a
+{
+    text-decoration: none;
+}
+.edj-v2-fnav-box a:hover,
+.edj-v2-fnav-box a:active
+{
+    color: #399bff !important;
+}
+.edj-v2-fnav-box a
+{
+    display: inline-block;
+
+    width: 100%;
+}
+.edj-v2-fnav-box
+{
+    font-size: 14px;
+
+    position: fixed;
+    z-index: 100000000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 56px;
+    height: auto;
+
+    background: #354052;
+}
+.edj-v2-fnav-box-exp
+{
+    width: 200px;
+}
+.edj-v2-fnavs
+{
+    position: absolute;
+    top: 50px;
+    bottom: 40px;
+    left: 0;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    width: 110%;
+}
+.edj-v2-fnavs li
+{
+    display: block;
+}
+.edj-v2-fnavs ul
+{
+    display: none;
+}
+.edj-v2-fnavs li li
+{
+    line-height: 40px;
+
+    clear: both;
+    overflow: hidden;
+
+    border-bottom: 1px solid #333e4f;
+}
+.edj-v2-fnavs li .tree-branch  div,
+.edj-v2-fnavs li .tree-branch  .tree-leaf,
+.edj-v2-fnavs .root-branch ul .tree-leaf
+{
+    padding-left: 3.5em!important;
+}
+.edj-v2-fnavs li .tree-branch .tree-branch  div,
+.edj-v2-fnavs li .tree-branch  ul  .tree-leaf
+{
+    padding-left: 4.5em!important;
+}
+.edj-v2-fnavs li .tree-branch .tree-branch .tree-branch  div,
+.edj-v2-fnavs li .tree-branch  ul ul .tree-leaf
+{
+    padding-left: 5.5em!important;
+}
+.tree-leaf
+{
+    height: 40px;
+
+    background: #354052;
+}
+.edj-v2-fnavs div
+{
+    clear: both;
+    overflow: hidden;
+
+    height: 40px;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #333e4f;
+}
+.edj-v2-fnavs .right-arr
+{
+    display: none;
+}
+.edj-v2-fnavs .right-arr,
+.edj-v2-fnavs .active-arr
+{
+    float: right;
+
+    width: 8px;
+    height: 5px;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+.edj-v2-fnavs .right-arr
+{
+    height: 10px;
+
+    background: url(Arrow-right.png) center no-repeat transparent;
+}
+.edj-v2-fnavs .active-arr
+{
+    background: url(Arrow.png) center no-repeat transparent;
+}
+.edj-v2-fnavs div .edj-v2-tree-title
+{
+    display: none;
+
+    cursor: pointer;
+}
+.root-branch > div > .edj-v2-tree-title
+{
+    margin-left: 10px;
+}
+.edj-v2-fnavs div > span
+{
+    line-height: 40px;
+
+    float: left;
+}
+.edj-v2-fnavs div > .edj-v2-ico-nav
+{
+    width: 18px;
+    height: 42px;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.edj-v2-ico-user
+{
+    background: url(Icon_User.png) center no-repeat transparent;
+}
+.edj-v2-ico-notice
+{
+    background: url(Icon_Announcement.png) center no-repeat transparent;
+}
+.edj-v2-ico-operate
+{
+    background: url(Icon_Operations.png) center no-repeat transparent;
+}
+.edj-v2-ico-call
+{
+    background: url(Icon_CallCenter.png) center no-repeat transparent;
+}
+.edj-v2-ico-client
+{
+    background: url(Icon_Customer.png) center no-repeat transparent;
+}
+.edj-v2-ico-brand
+{
+    background: url(Icon_BrandMonitoring.png) center no-repeat transparent;
+}
+.edj-v2-ico-driverm
+{
+    background: url(Icon_DriverManagement.png) center no-repeat transparent;
+}
+.edj-v2-ico-market
+{
+    background: url(Icon_Market.png) center no-repeat transparent;
+}
+.edj-v2-ico-finance
+{
+    background: url(Icon_Finance.png) center no-repeat transparent;
+}
+.edj-v2-ico-sys
+{
+    background: url(Icon_System.png) center no-repeat transparent;
+}
+
+.edj-v2-fnav-switch
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 40px;
+
+    background: #3f4c61;
+}
+.edj-v2-fnav-switch .edj-v2-fnav-btn
+{
+    display: inline-block;
+
+    width: 47px;
+    height: 18px;
+    margin-top: 11px;
+    margin-left: 5px;
+
+    background: url(SwitchOn.png) center no-repeat transparent;
+}
+.edj-v2-fnav-switch .edj-v2-fnav-active
+{
+    background: url(SwitchOff.png) center no-repeat transparent;
+}
+.tree-branch-show
+{
+    background: #2a3342;
+}
+.tree-branch-show *
+{
+    color: #fff;
+}
+.tree-branch-show > div > span
+{
+    color: #399bff !important;
+}
+.edj-v2-fnavs li:hover,
+.edj-v2-fnavs li.active-li,
+.edj-v2-fnavs li.active-li > a
+{
+    color: #399bff !important;
+    background: #2a3342 !important;
+}

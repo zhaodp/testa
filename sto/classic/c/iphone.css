@@ -1,0 +1,43 @@
+body{
+	-webkit-text-size-adjust:none;
+	font-family:Helvetica, Arial, Verdana, sans-serif;
+	padding:0px;
+	margin:0px;
+}
+
+#top {
+	background: url("../i/top_bg.jpg") repeat-x scroll 0 0 transparent;
+}
+
+label {
+	text-align:left;
+	display:block;
+}
+
+input {
+    border: 1px solid #000000;
+    font-size: 16px;
+    height: 24px;
+    padding: 4px;
+    width: 100%;
+}
+
+h1{
+	font-size:1em;
+	font-blod:true;
+}
+.notice_row{
+	border:1px solid #cccccc;
+	font-size:1.2em;
+	display:block;
+}
+
+.notice_date{
+	font-size:0.6em;
+}
+
+#foot{
+	padding-top:20px;
+	text-align:center;
+	font-size:0.8em;
+}

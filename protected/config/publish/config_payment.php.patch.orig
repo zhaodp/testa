@@ -1,0 +1,9 @@
+23c23
+< 			'mer_back_end_url'=>'http://api.d.edaijia.cn/v4/notify',   //银联回调后台通知地址
+---
+> 			'mer_back_end_url'=>'http://call.edaijia.cn/notify',   //银联回调后台通知地址
+34c34
+<             
+\ No newline at end of file
+---
+>             

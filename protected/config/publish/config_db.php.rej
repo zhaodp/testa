@@ -1,0 +1,19 @@
+*** config_db.php.new	2014-10-23 16:50:09.952240160 +0800
+--- config_db.php	2014-10-23 16:49:13.118236974 +0800
+***************
+*** 26,32 ****
+  //dbstat 主库 指向db03
+  $dbstat = array (
+  	'class'=>'system.db.CDbConnection', 
+! 	'connectionString'=>'mysql:host=10.161.241.169;dbname=db_stat',
+  	'schemaCachingDuration'=>600, 
+  	'emulatePrepare'=>true, 
+  	'autoConnect'=>false, 
+--- 26,32 ----
+  //dbstat 主库 指向db03
+  $dbstat = array (
+  	'class'=>'system.db.CDbConnection', 
+! 	'connectionString'=>'mysql:host=10.132.42.159;dbname=db_stat',
+  	'schemaCachingDuration'=>600, 
+  	'emulatePrepare'=>true, 
+  	'autoConnect'=>false, 

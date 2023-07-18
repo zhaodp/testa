@@ -1,0 +1,126 @@
+/*
+* edaijia 后台选择
+* Author	wangyanhong@edaijia-inc.cn
+* Time		2015-03-24
+* Version 	0.0.1
+*/
+.checkboxArr {
+  width: 700px;
+}
+.checkboxArr .vnone {
+  display: none;
+}
+.checkboxArr .item {
+  height: 30px;
+  clear: both;
+}
+.checkboxArr .item label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;  
+}
+.checkboxArr .item .col {
+  float: left;
+}
+.checkboxArr .item .col-a {
+  width: 150px;
+}
+.checkboxArr .item .col-b {
+  width: 250px;
+}
+.checkboxArr .item .col-c {
+  width: 300px;
+}
+.checkboxArr .item .col input {
+  margin: 0;
+}
+.checkboxArr .item .checkbox-txt,.checkboxArr .Mtable .checkbox-txt{
+  height: 20px;
+  width: 80px;
+  border: 1px solid #ccc;
+  margin: 0;
+  line-height: 20px;
+  text-indent: 3px;
+}
+.checkboxArr .item .checkbox-selct{
+  width: 180px;
+  margin: 0;
+}
+.checkboxArr .item .checkbox-btn{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px 10px;
+  color: #000;
+  line-height: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkboxArr .pop{
+  position: fixed;
+  top:30%;
+  left:50%;
+  display:none;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-left:-250px;
+  background: #fff;
+  z-index: 5;
+}
+.checkboxArr .pop .title {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.checkboxArr .pop .intro {
+  padding: 10px 0;
+}
+.checkboxArr .pop .Mtable {
+  width: 500px;
+  border-collapse: collapse;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.checkboxArr .pop .Mtable th,.checkboxArr .pop .Mtable td {
+  height: 35px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  text-align: center;
+}
+.checkboxArr .pop .Mtable td .addprice {
+  height: 20px;
+  width: 60px;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  line-height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.checkboxArr .pop .btnArr{
+  padding:10px 0;
+  text-align: center;
+}
+.mask{
+  height: 100%;
+  width: 100%;
+  display:none;
+  position: fixed;
+  top:0;
+  left:0;
+  background: #000;
+  opacity: 0.7;
+  filter:opacity(alpha=70);
+  z-index: 4;
+}
+.checkboxArr .popshow{
+  display: block;
+}
+.checkboxArr .pophide{
+  display: none;
+}
